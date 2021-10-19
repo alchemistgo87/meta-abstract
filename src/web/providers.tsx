@@ -16,7 +16,7 @@ export const Providers: FC = ({ children }) => {
           <CoingeckoProvider>
             <StoreProvider
               ownerAddress="EhrvJcpBDX3tqGJtgkRjgxwVeJjM4Zw22m8KbffJhpVQ"
-              storeAddress="EhrvJcpBDX3tqGJtgkRjgxwVeJjM4Zw22m8KbffJhpVQ"
+              // storeAddress="EhrvJcpBDX3tqGJtgkRjgxwVeJjM4Zw22m8KbffJhpVQ"
             >
               <MetaProvider>{children}</MetaProvider>
             </StoreProvider>
