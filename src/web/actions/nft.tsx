@@ -177,6 +177,9 @@ export const mintNFT = async (
     toPublicKey(mintKey)
   );
 
+  console.log("Creators:");
+  console.log(metadata.creators);
+  console.log("Creating metadata account");
   const metadataAccount = await createMetadata(
     new Data({
       symbol: metadata.symbol,
@@ -191,6 +194,10 @@ export const mintNFT = async (
     instructions,
     wallet.publicKey.toBase58()
   );
+
+  console.log("metadataAccount:");
+  console.log(metadataAccount);
+
   progressCallback(2);
 
   // TODO: enable when using payer account to avoid 2nd popup

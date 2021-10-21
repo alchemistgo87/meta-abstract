@@ -18,14 +18,12 @@ export default function TestMint() {
 
   const { connect, connected } = wallet;
   const { setVisible } = useWalletModal();
-  //const open = useCallback(() => setVisible(true), [setVisible]);
+  const open = useCallback(() => setVisible(true), [setVisible]);
 
   // Connect Wallet
   const handleConnect = useCallback(
-    () => connect().catch(() => {}),
-    [connect]
-    // () => (wallet ? connect().catch(() => {}) : open()),
-    // [wallet, connect, open]
+    () => (wallet.wallet ? connect().catch(() => {}) : open()),
+    [wallet.wallet, connect, open]
   );
 
   // store files
