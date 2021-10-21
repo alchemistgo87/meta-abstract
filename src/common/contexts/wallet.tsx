@@ -150,6 +150,7 @@ export const WalletModalProvider: FC<{ children: ReactNode }> = ({
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    console.log("WalletModalProvider wallet pubkey: " + publicKey);
     if (publicKey) {
       const base58 = publicKey.toBase58();
       const keyToDisplay =

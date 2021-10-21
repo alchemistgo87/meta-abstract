@@ -94,6 +94,8 @@ export const mintNFT = async (
 ): Promise<{
   metadataAccount: StringPublicKey;
 } | void> => {
+  console.log("Wallet Key:");
+  console.log(wallet?.publicKey?.toBase58);
   if (!wallet?.publicKey) return;
 
   const metadataContent = {
