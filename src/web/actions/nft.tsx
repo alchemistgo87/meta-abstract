@@ -244,6 +244,8 @@ export const mintNFT = async (
     },
     {}
   );
+  console.log("Real Files:");
+  console.log(realFiles);
   data.append("tags", JSON.stringify(tags));
   realFiles.map((f) => data.append("file[]", f));
 

@@ -31,13 +31,14 @@ export default function TestMint() {
     const metadata = {
       name: "Test Mint",
       symbol: "",
-      creators: [
-        {
-          address: "EhrvJcpBDX3tqGJtgkRjgxwVeJjM4Zw22m8KbffJhpVQ",
-          share: 100,
-          verified: true,
-        },
-      ],
+      creators: null,
+      // [
+      //   {
+      //     address: "EhrvJcpBDX3tqGJtgkRjgxwVeJjM4Zw22m8KbffJhpVQ",
+      //     verified: true,
+      //     share: 100,
+      //   },
+      // ],
       description: "First Test Mint",
       sellerFeeBasisPoints: 500,
       image: "DK_FbCover.png",
@@ -53,13 +54,12 @@ export default function TestMint() {
             type: "image/png",
           },
         ],
-        creators: [
-          {
-            address: "EhrvJcpBDX3tqGJtgkRjgxwVeJjM4Zw22m8KbffJhpVQ",
-            share: 100,
-            verified: true,
-          },
-        ],
+        // creators: [
+        //   {
+        //     address: "EhrvJcpBDX3tqGJtgkRjgxwVeJjM4Zw22m8KbffJhpVQ",
+        //     share: 100,
+        //   },
+        // ],
         category: MetadataCategory.Image,
       },
     };
